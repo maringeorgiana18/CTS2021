@@ -24,10 +24,10 @@ public abstract class Vehicle implements Cloneable {
 	
 	@Override
 	public Object clone() throws CloneNotSupportedException {
-		Vehicle copy = (Vehicle)super.clone();
-		copy.nameVehicle = nameVehicle;
-		copy.speedVehicle = speedVehicle;
-		return copy;
+		Vehicle copyVehicle = (Vehicle)super.clone();
+		copyVehicle.nameVehicle = nameVehicle;
+		copyVehicle.speedVehicle = speedVehicle;
+		return copyVehicle;
 	}
 
 	public abstract void move();

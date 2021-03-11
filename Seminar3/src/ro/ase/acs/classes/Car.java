@@ -54,9 +54,9 @@ public final class Car extends Vehicle implements Taxable {
 
 	@Override
 	public Object clone() throws CloneNotSupportedException {
-		Car copy =  (Car)super.clone();
-		copy.colorVehicle = colorVehicle;
-		copy.capacityVehicle = capacityVehicle;
-		return copy;
+		Car copyCar =  (Car)super.clone();
+		copyCar.colorVehicle = colorVehicle;
+		copyCar.capacityVehicle = capacityVehicle;
+		return copyCar;
 	}
 }
